@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/datosTecnicos.css">
+    <script src="https://kit.fontawesome.com/fda2d00f8d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- Barra de navegación principal -->
+    <nav class="menu">
+        <h1>G2 RepairTrack</h1>
+    <!-- Enlaces de navegación a distintas secciones -->
+        <a href="DatosCliente.html">Datos del Cliente</a>
+        <a href="DatosTecnico.html">Datos del Tecnico</a> 
+        <a href="DatosDispositivos.html">Datos del Dispositivo</a> 
+        <a href="Reparaciones.html">Reparaciones</a>
+    </nav>
+
+    <!-- Contenedor de los títulos de bienvenida o encabezado de sección -->
+    <div class="contenedor-titulo">
+        <div class="titulo">
+            <h2>Ingrese los datos del Tecnico</h2>
+            <h1>Proyecto para el registro de Reparaciones de celulares</h1>
+        </div>
+    </div>
+
+    <!-- Contenedor principal que agrupa todos los elementos del formulario y el menú de operaciones -->
+    <div class="contenedor-datos">
+        <!-- Contenedor del formulario -->
+        <div class="form-container">
+            <form action="registrarCliente" method="post">
+                <!-- Primer grupo de campos del formulario -->
+                <div class="form-group">
+                    <!-- Campo para ingresar la cedula del Tecnico -->
+                    <div class="form-content">
+                        <label for="cedula" class="form-label">Cedula</label>
+                        <input type="text" class="form-input" name="cedula" id="cedula" required>
+                    </div>
+                    <!-- Campo para ingresar el nombre del cliente -->
+                    <div class="form-content">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <!-- ERROR TIPOGRÁFICO: falta la 'r' en 'required' -->
+                        <input type="text" class="form-input" name="nombre" id="nombre" required>
+                    </div>
+                </div>
+
+                <!-- Segundo grupo de campos del formulario -->
+                <div class="form-group">
+                    <!-- Campo para ingresar los apellidos del Tecnico -->
+                    <div class="form-content">
+                        <label for="apellido" class="form-label">Apellidos</label>
+                        <input type="text" class="form-input" name="apellido" id="apellido" required>
+                    </div>
+                    <!-- Campo para ingresar el teléfono del Tecnico -->
+                    <div class="form-content">
+                        <label for="telefono" class="form-label">Telefono</label>
+                        <input type="text" class="form-input" name="telefono" id="telefono" required>
+                    </div>
+                </div>
+
+                <!-- Tercero grupo de campos del formulario -->
+                <div class="form-group">
+                    <!-- Campo para ingresar la especialdad del Tecnico -->
+                    <div class="form-content">
+                        <label for="especialidad" class="form-label">Especialidad</label>
+                        <select name="especialidad" id="especialidad">
+                            <option value="">--Seleccione una Especialidad--</option>
+                            <option value="">Especialidad en Telefono Android</option>
+                            <option value="">Especialidad en Telefono Iphone</option>
+                            <option value="">Especialidad en telefono Xiaomi</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button type="submit">Guardar</button>
+            </form>
+        </div>
+
+
+        <div class="tabla-datos">
+            <h1>Tabla de Datos</h1>
+            <table>
+                <thead>
+                    <th>Id</th>
+                    <th>Cedula</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Telefono</th>
+                    <th>Especialidad</th>
+                    <th>Opciones</th>
+                </thead>
+    
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>0959112368</td>
+                        <td>Brian</td>
+                        <td>Ryan</td>
+                        <td>0980616659</td>
+                        <td>Especialidad en Telefono Android</td>
+                        <td>
+                            <a href="" class="icon"><i class="fa-solid fa-pen"></i></a>
+                            <a href="" class="icon"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>  
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="terms">
+                    <p>Diseño </p>
+                </div>
+            </div>
+            <div class="box__footer">
+                <h2>Registros</h2>
+                <a href="DatosCliente.html">Datos del Cliente</a>
+                <a href="DatosTecnico.html">Datos del Tecnico</a>
+                <a href="DatosDispositivos.html">Datos del Dispoisito</a>
+                <a href="#">Datos de la Reparacion</a>
+            </div>
+
+            <div class="box__footer">
+                <h2>Grupo G-02</h2>
+                <a href="#">CARRANZA FREIJO BRYAN</a>
+                <a href="#">CARRION LOAIZA MARC</a>
+                <a href="#">CHIRIGUAYA VASQUEZ HECTOR</a>
+                <a href="#">MORALES ESPINALES TERRY</a>              
+            </div>
+
+            <div class="box__footer">
+                <h2>Redes Sociales</h2>
+                <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+            </div>
+
+        </div>
+
+        <div class="box__copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2025 <b>Grupo G-02</b></p>
+        </div>
+    </footer>
+
+</body>
+</html>
